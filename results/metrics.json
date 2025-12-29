@@ -1,0 +1,123 @@
+{
+  "summary": {},
+  "by_model": {
+    "gpt-4o-mini": {
+      "baseline": {
+        "n": 90,
+        "abstention_rate": 0.011111111111111112,
+        "answer_accuracy": 0.3707865168539326,
+        "overall_accuracy": 0.36666666666666664,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0
+      },
+      "explicit_abstention": {
+        "n": 90,
+        "abstention_rate": 0.6444444444444445,
+        "answer_accuracy": 0.65625,
+        "overall_accuracy": 0.5333333333333333,
+        "precision": 0.46551724137931033,
+        "recall": 0.9,
+        "f1_score": 0.6136363636363636
+      },
+      "cot_uncertainty": {
+        "n": 90,
+        "abstention_rate": 0.32222222222222224,
+        "answer_accuracy": 0.4426229508196721,
+        "overall_accuracy": 0.45555555555555555,
+        "precision": 0.4827586206896552,
+        "recall": 0.4666666666666667,
+        "f1_score": 0.47457627118644075
+      },
+      "self_consistency": {
+        "n": 90,
+        "abstention_rate": 0.8444444444444444,
+        "answer_accuracy": 0.5,
+        "overall_accuracy": 0.36666666666666664,
+        "precision": 0.34210526315789475,
+        "recall": 0.8666666666666667,
+        "f1_score": 0.4905660377358491
+      }
+    },
+    "claude-sonnet-4": {
+      "baseline": {
+        "n": 90,
+        "abstention_rate": 0.03333333333333333,
+        "answer_accuracy": 0.3563218390804598,
+        "overall_accuracy": 0.34444444444444444,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0
+      },
+      "explicit_abstention": {
+        "n": 90,
+        "abstention_rate": 0.6,
+        "answer_accuracy": 0.5833333333333334,
+        "overall_accuracy": 0.5444444444444444,
+        "precision": 0.5185185185185185,
+        "recall": 0.9333333333333333,
+        "f1_score": 0.6666666666666667
+      },
+      "cot_uncertainty": {
+        "n": 90,
+        "abstention_rate": 0.3888888888888889,
+        "answer_accuracy": 0.5818181818181818,
+        "overall_accuracy": 0.5666666666666667,
+        "precision": 0.5428571428571428,
+        "recall": 0.6333333333333333,
+        "f1_score": 0.5846153846153846
+      },
+      "self_consistency": {
+        "n": 90,
+        "abstention_rate": 0.9333333333333333,
+        "answer_accuracy": 0.6666666666666666,
+        "overall_accuracy": 0.35555555555555557,
+        "precision": 0.3333333333333333,
+        "recall": 0.9333333333333333,
+        "f1_score": 0.4912280701754386
+      }
+    }
+  },
+  "by_condition": {
+    "baseline": {
+      "n": 180,
+      "abstention_rate": 0.022222222222222223,
+      "answer_accuracy": 0.36363636363636365,
+      "overall_accuracy": 0.35555555555555557,
+      "f1_score": 0.0
+    },
+    "explicit_abstention": {
+      "n": 180,
+      "abstention_rate": 0.6222222222222222,
+      "answer_accuracy": 0.6176470588235294,
+      "overall_accuracy": 0.5388888888888889,
+      "f1_score": 0.6395348837209303
+    },
+    "cot_uncertainty": {
+      "n": 180,
+      "abstention_rate": 0.35555555555555557,
+      "answer_accuracy": 0.5086206896551724,
+      "overall_accuracy": 0.5111111111111111,
+      "f1_score": 0.5322580645161291
+    },
+    "self_consistency": {
+      "n": 180,
+      "abstention_rate": 0.8888888888888888,
+      "answer_accuracy": 0.55,
+      "overall_accuracy": 0.3611111111111111,
+      "f1_score": 0.4909090909090909
+    }
+  },
+  "by_source": {
+    "truthfulqa": {
+      "n": 240,
+      "abstention_rate": 0.4125,
+      "correct_rate": 0.43333333333333335
+    },
+    "squad2": {
+      "n": 480,
+      "abstention_rate": 0.5020833333333333,
+      "correct_rate": 0.15
+    }
+  }
+}

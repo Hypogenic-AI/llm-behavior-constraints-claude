@@ -1,17 +1,26 @@
 {
-  "success": false,
+  "success": true,
   "stages": {
     "resource_finder": {
-      "success": false,
-      "completion_marker": null,
+      "success": true,
+      "completion_marker": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/.resource_finder_complete",
       "outputs": {
+        "literature_review": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/literature_review.md",
+        "resources_catalog": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/resources.md",
         "papers_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/papers",
         "datasets_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/datasets",
         "code_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/code"
       },
       "log_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/resource_finder_claude.log",
       "transcript_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/resource_finder_claude_transcript.jsonl",
-      "elapsed_time": 347.15040135383606
+      "elapsed_time": 838.1824562549591
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 4557.671769142151,
+      "log_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/execution_claude.log",
+      "transcript_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/execution_claude_transcript.jsonl"
     }
   },
   "work_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude"

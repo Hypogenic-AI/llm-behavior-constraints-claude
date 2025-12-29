@@ -1,1 +1,24 @@
-Prompt is too long
+All 5 phases are now complete. Here's a summary of what was accomplished:
+
+## Research Complete: Constraining LLM Behavior
+
+### Deliverables Created
+
+| File | Description |
+|------|-------------|
+| `literature_review.md` | Comprehensive 318-line synthesis of 10 papers covering abstention frameworks, training methods, inference-time approaches, and evaluation benchmarks |
+| `resources.md` | Consolidated quick-reference catalog with tables for papers, datasets, and code repositories |
+| `datasets/datasets_catalog.md` | Detailed catalog of 8+ datasets including AbstentionBench, SelfAware, TruthfulQA, HaluEval, SQuAD 2.0 |
+| `code/code_repositories.md` | 15+ repositories documented including R-Tuning, SelfCheckGPT, semantic entropy implementations, conformal prediction frameworks |
+| `.resource_finder_complete` | Completion marker file |
+
+### Key Finding
+
+**The research hypothesis is strongly supported**: LLMs can be trained to abstain appropriately through:
+- **R-Tuning**: Splitting training data into certain/uncertain sets and teaching refusal as a meta-skill
+- **UA-CLM**: Incorporating uncertainty directly into the loss function
+- **Conformal Prediction**: Providing statistical guarantees on hallucination rates
+- **Self-Consistency Methods**: Detecting hallucinations through sampling agreement
+
+### Notable Insight from AbstentionBench
+Reasoning fine-tuning (like chain-of-thought) actually degrades abstention ability by 24% on average, highlighting a fundamental tension between reasoning capabilities and knowing when to abstain.

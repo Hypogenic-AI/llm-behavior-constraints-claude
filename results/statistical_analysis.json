@@ -1,0 +1,112 @@
+{
+  "statistical_tests": {
+    "comparisons": {
+      "gpt-4o-mini_chi2": {
+        "test": "chi-squared",
+        "statistic": 145.9532105525137,
+        "p_value": 1.9663258474290856e-31,
+        "degrees_of_freedom": 3,
+        "interpretation": "significant"
+      },
+      "claude-sonnet-4_chi2": {
+        "test": "chi-squared",
+        "statistic": 153.94268774703556,
+        "p_value": 3.7169253695450986e-33,
+        "degrees_of_freedom": 3,
+        "interpretation": "significant"
+      },
+      "gpt-4o-mini_explicit_abstention_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.011111111111111112,
+        "intervention_rate": 0.6444444444444445,
+        "difference": 0.6333333333333334,
+        "z_statistic": 9.050913560497138,
+        "p_value": 0.0,
+        "cohens_h": 1.6526514847597926,
+        "effect_size_interpretation": "large",
+        "significant": true
+      },
+      "gpt-4o-mini_cot_uncertainty_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.011111111111111112,
+        "intervention_rate": 0.32222222222222224,
+        "difference": 0.3111111111111111,
+        "z_statistic": 5.6,
+        "p_value": 2.1435180519446817e-08,
+        "cohens_h": 0.9960770500230889,
+        "effect_size_interpretation": "large",
+        "significant": true
+      },
+      "gpt-4o-mini_self_consistency_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.011111111111111112,
+        "intervention_rate": 0.8444444444444444,
+        "difference": 0.8333333333333334,
+        "z_statistic": 11.298831733298135,
+        "p_value": 0.0,
+        "cohens_h": 2.119540532101564,
+        "effect_size_interpretation": "large",
+        "significant": true
+      },
+      "claude-sonnet-4_explicit_abstention_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.03333333333333333,
+        "intervention_rate": 0.6,
+        "difference": 0.5666666666666667,
+        "z_statistic": 8.171775841931975,
+        "p_value": 2.220446049250313e-16,
+        "cohens_h": 1.4049462270273902,
+        "effect_size_interpretation": "large",
+        "significant": true
+      },
+      "claude-sonnet-4_cot_uncertainty_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.03333333333333333,
+        "intervention_rate": 0.3888888888888889,
+        "difference": 0.35555555555555557,
+        "z_statistic": 5.844538991801358,
+        "p_value": 5.079730414081496e-09,
+        "cohens_h": 0.9794952139356885,
+        "effect_size_interpretation": "large",
+        "significant": true
+      },
+      "claude-sonnet-4_self_consistency_vs_baseline": {
+        "test": "two-proportion z-test",
+        "baseline_rate": 0.03333333333333333,
+        "intervention_rate": 0.9333333333333333,
+        "difference": 0.9,
+        "z_statistic": 12.081480877782429,
+        "p_value": 0.0,
+        "cohens_h": 2.2520698112259074,
+        "effect_size_interpretation": "large",
+        "significant": true
+      }
+    }
+  },
+  "bootstrap_ci": {
+    "baseline": {
+      "mean": 0.022222222222222223,
+      "ci_lower": 0.0,
+      "ci_upper": 0.05,
+      "ci_level": 0.95
+    },
+    "explicit_abstention": {
+      "mean": 0.6222222222222222,
+      "ci_lower": 0.55,
+      "ci_upper": 0.6944444444444444,
+      "ci_level": 0.95
+    },
+    "cot_uncertainty": {
+      "mean": 0.35555555555555557,
+      "ci_lower": 0.28888888888888886,
+      "ci_upper": 0.4222222222222222,
+      "ci_level": 0.95
+    },
+    "self_consistency": {
+      "mean": 0.8888888888888888,
+      "ci_lower": 0.8388888888888889,
+      "ci_upper": 0.9279166666666666,
+      "ci_level": 0.95
+    }
+  }
+}
