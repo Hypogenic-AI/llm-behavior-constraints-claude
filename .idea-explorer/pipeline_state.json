@@ -3,8 +3,8 @@
   "stages": {
     "resource_finder": {
       "status": "failed",
-      "started_at": "2025-12-28T23:35:18.095762",
-      "completed_at": "2025-12-28T23:39:39.280348",
+      "started_at": "2025-12-29T00:15:23.175277",
+      "completed_at": "2025-12-29T00:19:28.654592",
       "success": false,
       "outputs": {
         "papers_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/papers",
