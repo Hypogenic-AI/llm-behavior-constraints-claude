@@ -11,7 +11,7 @@
       },
       "log_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/resource_finder_claude.log",
       "transcript_file": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude/logs/resource_finder_claude_transcript.jsonl",
-      "elapsed_time": 245.47744750976562
+      "elapsed_time": 347.15040135383606
     }
   },
   "work_dir": "/data/hypogenicai/workspaces/llm-behavior-constraints-claude"
